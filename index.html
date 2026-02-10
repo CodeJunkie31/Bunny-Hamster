@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunnies & Hamsters World</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="title">🐰 Welcome to the Wonderful World of Bunnies & Hamsters 🐹</h1>
+            <p class="subtitle">Discover the adorable lives of our furry friends!</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <button class="nav-btn" onclick="showSection('bunnies')">All About Bunnies</button>
+            <button class="nav-btn" onclick="showSection('hamsters')">All About Hamsters</button>
+            <button class="nav-btn" onclick="showSection('fun')">Fun Facts</button>
+        </nav>
+
+        <!-- Bunnies Section -->
+        <section id="bunnies" class="section active">
+            <h2 class="section-title">🐰 Bouncing Bunnies</h2>
+            
+            <div class="card bounce">
+                <h3>Physical Characteristics</h3>
+                <p>Bunnies are small, fluffy mammals with long ears that can rotate 270 degrees to detect predators. Their soft fur comes in various colors including white, brown, black, spotted, and even blue-grey. They have powerful hind legs built for hopping, allowing them to leap up to 3 feet high and 9 feet long in a single bound!</p>
+            </div>
+
+            <div class="card slide-in-left">
+                <h3>Behavior & Personality</h3>
+                <p>These adorable creatures are crepuscular, meaning they're most active during dawn and dusk. Bunnies express joy through "binkying" - when they jump in the air and twist their body in pure happiness! They're incredibly social animals that form strong bonds with their companions and communicate through various sounds including purring, grunting, and tooth clicking.</p>
+            </div>
+
+            <div class="card slide-in-right">
+                <h3>Diet & Nutrition</h3>
+                <p>A bunny's diet consists primarily of fresh hay (about 80%), which is essential for their digestive health and helps wear down their constantly growing teeth. They also enjoy fresh vegetables like romaine lettuce, cilantro, and carrots (as treats). Fresh water should always be available, and they produce two types of droppings - regular pellets and cecotropes which they re-ingest for nutrients!</p>
+            </div>
+
+            <div class="card fade-in">
+                <h3>Habitat & Living</h3>
+                <p>Domestic bunnies need spacious enclosures with room to hop and explore. They love having hideaways, tunnels, and platforms for climbing. Temperature is crucial - they thrive in cool environments between 60-70°F. Wild rabbits live in underground burrow systems called warrens, which can house entire family groups and have multiple entrances for safety.</p>
+            </div>
+        </section>
+
+        <!-- Hamsters Section -->
+        <section id="hamsters" class="section">
+            <h2 class="section-title">🐹 Happy Hamsters</h2>
+            
+            <div class="card rotate-in">
+                <h3>Physical Features</h3>
+                <p>Hamsters are tiny rodents with chubby cheeks called cheek pouches that can expand to nearly double the size of their head! They use these to store and transport food. Their small, stocky bodies are covered in dense, soft fur. They have short tails, small rounded ears, and tiny pink paws with sharp claws perfect for burrowing.</p>
+            </div>
+
+            <div class="card slide-in-left">
+                <h3>Nocturnal Lifestyle</h3>
+                <p>Hamsters are strictly nocturnal creatures, sleeping during the day and becoming active at night. Their excellent sense of smell and hearing compensates for their poor eyesight. They can run up to 5 miles per night on their exercise wheels! In the wild, they travel great distances searching for food under the cover of darkness to avoid predators.</p>
+            </div>
+
+            <div class="card slide-in-right">
+                <h3>Food Storage Habits</h3>
+                <p>These little hoarders are famous for stuffing their cheek pouches with food and carrying it back to their burrows. A hamster can fit an amazing amount in its pouches - sometimes over half its body weight! They create elaborate food storage chambers in their underground homes, preparing for times when food might be scarce.</p>
+            </div>
+
+            <div class="card pulse">
+                <h3>Housing & Environment</h3>
+                <p>Hamsters need cages with solid flooring (no wire) and plenty of bedding for burrowing - their favorite activity! They require an exercise wheel, hiding spots, and chew toys to keep their continuously growing teeth healthy. Syrian hamsters must live alone as they're solitary, while dwarf varieties can sometimes live in same-sex pairs if introduced young.</p>
+            </div>
+        </section>
+
+        <!-- Fun Facts Section -->
+        <section id="fun" class="section">
+            <h2 class="section-title">✨ Amazing Fun Facts!</h2>
+            
+            <div class="facts-grid">
+                <div class="fact-card flip">
+                    <h4>🐰 Bunny Super Speed</h4>
+                    <p>Rabbits can run up to 45 mph when fleeing from danger - faster than most domestic cats and dogs!</p>
+                </div>
+
+                <div class="fact-card flip" style="animation-delay: 0.2s">
+                    <h4>🐹 Hamster Memory</h4>
+                    <p>Hamsters can remember their relatives and will recognize their siblings even after long separations!</p>
+                </div>
+
+                <div class="fact-card flip" style="animation-delay: 0.4s">
+                    <h4>🐰 Bunny Vision</h4>
+                    <p>Rabbits can see nearly 360 degrees around them, with only a small blind spot in front of their nose!</p>
+                </div>
+
+                <div class="fact-card flip" style="animation-delay: 0.6s">
+                    <h4>🐹 Hamster Babies</h4>
+                    <p>Baby hamsters are called pups, and they're born completely hairless and blind, but grow incredibly fast!</p>
+                </div>
+
+                <div class="fact-card flip" style="animation-delay: 0.8s">
+                    <h4>🐰 Bunny Teeth</h4>
+                    <p>A rabbit's teeth never stop growing! They can grow up to 5 inches per year, which is why they need to constantly chew.</p>
+                </div>
+
+                <div class="fact-card flip" style="animation-delay: 1s">
+                    <h4>🐹 Hamster Species</h4>
+                    <p>There are 24 different species of hamsters, but only 5 are commonly kept as pets: Syrian, Campbell's, Winter White, Roborovski, and Chinese hamsters!</p>
+                </div>
+            </div>
+
+            <div class="interactive-section">
+                <button class="fun-btn" onclick="generateFact()">Generate Random Fact! 🎲</button>
+                <div id="random-fact" class="random-fact"></div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>🐰🐹 Made with love for all bunny and hamster enthusiasts! 🐹🐰</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
